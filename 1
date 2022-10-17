@@ -1,0 +1,43 @@
+import math
+
+def Szescian(y):
+    if y == 1:
+        a = float(input("podaj długość krawędzi"))
+        return 6*a**2
+    if y == 2:
+        a = float(input("podaj długość krawędzi"))
+        return a**3
+def Prosto(y):
+    if y == 1:
+        a = float(input("podaj długość 1 krawędzi"))
+        b = float(input("podaj długość 2 krawędzi"))
+        c = float(input("podaj długość 3 krawędzi"))
+        return 2*(a*b) + 2*(a*c) + 2*(c*b)
+    if y == 2:
+        a = float(input("podaj długość 1 krawędzi"))
+        b = float(input("podaj długość 2 krawędzi"))
+        c = float(input("podaj długość 3 krawędzi"))
+        return a*b*c
+def Grania(y):
+    if y == 1:
+        a = float(input("podaj pole podstawy"))
+        b = float(input("podaj pole boczne"))
+        return 2*a + b
+    if y == 2:
+        a = float(input("podaj pole podstawy"))
+        a = float(input("podaj wysokość"))
+        return a*b
+
+
+ks = float(input("1 = Sześcian\n 2 = Prostopadłościa\n 3 = Graniastosłup 4 = Ostrosłup 5 = Walec 6 = Stożek 7 = Kula 8 =  Kwadrat 9 = Prostokąt"))
+
+if ks == 1:
+    y = float(input("1 = Pole Powierzchni 2 = Objętość"))
+    print(Szescian(y))
+elif ks == 2:
+    y = float(input("1 = Pole Powierzchni 2 = Objętość"))
+    print(Prosto(y))
+elif ks == 3:
+    y = float(input("1 = Pole Powierzchni 2 = Objętość"))
+    print(Grania(y))
+
